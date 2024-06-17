@@ -1,0 +1,33 @@
+.services {
+  padding-bottom: 94px;
+  position: relative;
+}
+
+.services-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.services-list {
+  display: flex;
+  justify-content: space-between;
+}
+.bg-title {
+  background-color: #2F303ACC;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  width: 370px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: absolute;
+  bottom: 95px;
+}
