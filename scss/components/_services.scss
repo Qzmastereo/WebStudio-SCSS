@@ -1,20 +1,22 @@
 .services {
   padding-bottom: 94px;
   position: relative;
+
+  &-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-.services-title {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  padding-bottom: 50px;
-}
-.services-list {
-  display: flex;
-  justify-content: space-between;
-}
 .bg-title {
   background-color: #2F303ACC;
   font-family: 'Roboto', sans-serif;

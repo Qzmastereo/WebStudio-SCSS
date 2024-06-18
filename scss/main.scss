@@ -4,47 +4,45 @@
 }
 
 :root {
-  --background-color: #2F303A;
-  --button-color: #2196F3;
+  --background-color: #2f303a;
+  --button-color: #2196f3;
   --section-two-color-text: #757575;
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 700;
-  src: url('Roboto/Roboto-Bold.ttf');
+  src: url("Roboto/Roboto-Bold.ttf");
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 900;
-  src: url('Roboto/Roboto-Black.ttf');
+  src: url("Roboto/Roboto-Black.ttf");
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 500;
-  src: url('Roboto/Roboto-Medium.ttf');
+  src: url("Roboto/Roboto-Medium.ttf");
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 400;
-  src: url('Roboto/Roboto-Regular.ttf');
+  src: url("Roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 300;
-  src: url('Roboto/Roboto-Light.ttf');
+  src: url("Roboto/Roboto-Light.ttf");
 }
 
 body {
-
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
 }
-
 
 .container {
   width: 1170px;
@@ -52,22 +50,20 @@ body {
   padding: 0 15px;
 }
 
-
 #one::before {
-  content: url(img_Web/antenna.svg);
-
+  content: url(https://svgshare.com/i/17M8.svg);
 }
 
 #two::before {
-  content: url(img_Web/clock.svg);
+  content: url(https://svgshare.com/i/17MN.svg);
 }
 
 #three::before {
-  content: url(img_Web/diagram.svg);
+  content: url(https://svgshare.com/i/17Mw.svg);
 }
 
 #four::before {
-  content: url(img_Web/astronaut.svg);
+  content: url(https://svgshare.com/i/17NX.svg);
 }
 
 #one::before,
@@ -79,15 +75,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   margin-bottom: 20px;
+  z-index: 1;
 }
-
 
 .no-scroll {
   overflow: hidden;
 }
-
 
 #fourr {
   min-width: 435px;
@@ -95,7 +90,7 @@ body {
   color: #75757580;
   padding-left: 16px;
   padding-top: 12px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
   margin-bottom: 20px;
@@ -107,7 +102,6 @@ body {
   margin-bottom: 12px;
   padding-left: 30px;
 }
-
 
 #onee {
   background: url(img_Web/Vector_4.svg) no-repeat 12px;
@@ -148,12 +142,15 @@ body {
     opacity: 1;
   }
 }
+ul li {
+  list-style-type: none;
+}
 
-@import 'components/client';
-@import 'components/feature';
-@import 'components/footer';
-@import 'components/header';
-@import 'components/main-sec';
-@import 'components/modal';
-@import 'components/services';
-@import 'components/team';
+@import "components/client";
+@import "components/feature";
+@import "components/footer";
+@import "components/header";
+@import "components/main-sec";
+@import "components/modal";
+@import "components/services";
+@import "components/team";
