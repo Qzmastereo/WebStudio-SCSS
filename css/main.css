@@ -608,14 +608,16 @@ ul li {
 .foto-member {
   width: 270px;
 }
-.foto-member .team-member-name {
+
+.team-member-name {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   text-align: center;
   padding-top: 30px;
 }
-.foto-member .team-member-job {
+
+.team-member-job {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;

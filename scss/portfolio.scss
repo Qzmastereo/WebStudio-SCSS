@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  :root {
+    --background-color: #2F303A;
+    --button-color: #2196F3;
+    --section-two-color-text: #757575;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 700;
+    src: url('Roboto/Roboto-Bold.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 900;
+    src: url('Roboto/Roboto-Black.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 500;
+    src: url('Roboto/Roboto-Medium.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: url('Roboto/Roboto-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 300;
+    src: url('Roboto/Roboto-Light.ttf');
+  }
+  
+  body {
+  
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px
+  }
+  .container{
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+@import "components/comp-port/filter";
+@import "components/comp-port/footer";
+@import "components/comp-port/header";
+@import "components/comp-port/main-sec";

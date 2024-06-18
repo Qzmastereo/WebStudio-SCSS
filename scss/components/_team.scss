@@ -46,21 +46,20 @@
 
 .foto-member {
   width: 270px;
+}
+.team-member-name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 30px;
+}
 
-  .team-member-name {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    text-align: center;
-    padding-top: 30px;
-  }
-
-  .team-member-job {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--section-two-color-text);
-    text-align: center;
-    padding: 10px 0 16px;
-  }
+.team-member-job {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--section-two-color-text);
+  text-align: center;
+  padding: 10px 0 16px;
 }
