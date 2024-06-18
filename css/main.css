@@ -144,16 +144,14 @@ ul li {
   display: flex;
   justify-content: space-between;
 }
-
-.icon-client {
+.client-icons .icon-client {
   fill: #AFB1B8;
   cursor: pointer;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   margin-bottom: 94px;
 }
-
-.icon-client:hover {
+.client-icons .icon-client:hover {
   fill: #2196F3;
   border: 1px solid #2196F3;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -178,15 +176,13 @@ ul li {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-.feature-title {
+.feature-section .feature-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
 }
-
-.feature-text {
+.feature-section .feature-text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -201,16 +197,16 @@ ul li {
 
 .main-footer {
   background-color: var(--background-color);
-}
-
-.main-footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
-.footer-address,
-.footer-email,
-.footer-phone {
+.main-footer .container {
+  display: flex;
+  align-items: start;
+}
+.main-footer .footer-address,
+.main-footer .footer-email,
+.main-footer .footer-phone {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -218,41 +214,28 @@ ul li {
   color: #FFFFFF;
   padding-bottom: 9px;
 }
-
-.footer-email {
+.main-footer .footer-email,
+.main-footer .footer-phone {
   color: rgba(255, 255, 255, 0.6);
 }
-
-.footer-phone {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-social {
+.main-footer .footer-social {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   padding-left: 70px;
 }
-
-.main-footer > .container {
-  display: flex;
-  align-items: start;
-}
-
-.icon-footer {
+.main-footer .icon-footer {
   fill: #FFFFFF;
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.1019607843);
   margin-right: 10px;
   border-radius: 30px;
 }
-
-.icon-footer:hover {
+.main-footer .icon-footer:hover {
   background-color: #2196F3;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.social-title {
+.main-footer .social-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #FFFFFF;
@@ -262,12 +245,10 @@ ul li {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
-.footer-form {
+.main-footer .footer-form {
   margin-left: 93px;
 }
-
-.input-footer {
+.main-footer .input-footer {
   width: 290px;
   height: 50px;
   border-radius: 4px;
@@ -275,8 +256,7 @@ ul li {
   background-color: #2F303A;
   padding-left: 15px;
 }
-
-.btn-footer {
+.main-footer .btn-footer {
   border-radius: 4px;
   border-color: var(--button-color);
   background-color: var(--button-color);
@@ -292,25 +272,15 @@ ul li {
   color: #FFFFFF;
   padding-bottom: 5px;
 }
-
-.img-btn-footer {
+.main-footer .img-btn-footer {
   margin-left: 5px;
 }
-
-.link-email {
+.main-footer .link-email,
+.main-footer .link-phone {
   text-decoration: none;
-}
-
-.link-phone {
-  text-decoration: none;
-}
-
-.link-email,
-.link-phone {
   color: rgba(255, 255, 255, 0.6);
 }
-
-.footer-logo {
+.main-footer .footer-logo {
   padding-bottom: 20px;
 }
 
@@ -318,7 +288,6 @@ ul li {
   padding-top: 24px;
   padding-bottom: 25px;
 }
-
 .main-header > .container {
   display: flex;
   align-items: center;
@@ -331,7 +300,14 @@ ul li {
   justify-self: center;
   align-items: center;
 }
+.nav-menu > li:hover {
+  fill: #2196F3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+#studia {
+  color: #2196F3;
+}
 #studia:after {
   position: absolute;
   content: "";
@@ -344,10 +320,6 @@ ul li {
   background-color: #2196F3;
 }
 
-#studia {
-  color: #2196F3;
-}
-
 .nav-link {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
@@ -356,12 +328,8 @@ ul li {
   line-height: 1.17;
   color: #212121;
   margin-right: 50px;
-}
-
-.nav-link {
   position: relative;
 }
-
 .nav-link:after {
   position: absolute;
   content: "";
@@ -373,12 +341,10 @@ ul li {
   border-radius: 2px;
   background-color: #2196F3;
 }
-
 .nav-link:hover::after {
   width: 100%;
   transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .nav-link:hover {
   color: var(--button-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -395,11 +361,6 @@ ul li {
   margin-right: 3px;
 }
 
-.nav-menu > li:hover {
-  fill: #2196F3;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .nav-email {
   color: #212121;
   text-decoration: none;
@@ -407,7 +368,6 @@ ul li {
   font-weight: 500;
   font-size: 14px;
 }
-
 .nav-email:hover {
   color: var(--button-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -424,7 +384,6 @@ ul li {
   font-weight: 500;
   font-size: 14px;
 }
-
 .phone-number:hover {
   color: var(--button-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -437,8 +396,7 @@ ul li {
   background-size: cover;
   background-color: var(--background-color);
 }
-
-.flex-container {
+.main-section .flex-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -447,9 +405,8 @@ ul li {
   height: 200px;
   margin: 0 auto;
 }
-
-.main-title {
-  color: #FFF;
+.main-section .flex-container .main-title {
+  color: #fff;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 44px;
@@ -473,7 +430,7 @@ ul li {
   font-weight: 700;
   font-size: 16px;
   line-height: 16.41px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .backdrop {
@@ -486,7 +443,6 @@ ul li {
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -500,56 +456,44 @@ ul li {
   width: 528px;
   height: 581px;
   padding: 15px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   transform: translate(-50%, -50%);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal {
   margin: 0;
 }
-
-.btn {
+.modal .btn {
   border-radius: 150px;
-  padding-left: 9px;
-  padding-right: 9px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px 9px;
   margin-left: 500px;
   border-color: rgba(0, 0, 0, 0.1019607843);
   cursor: pointer;
 }
-
-.form-title {
+.modal .form-title {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 12px;
 }
-
-.form {
+.modal .form {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
   margin-left: 40px;
 }
-
-.pred-title {
+.modal .form .pred-title {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
   color: #757575;
 }
-
-.form-input {
+.modal .form .form-input {
   width: 418px;
   height: 40px;
   border-color: rgba(33, 33, 33, 0.2);
 }
-
-.checkbox {
+.modal .form .checkbox {
   width: 16px;
   height: 16px;
   border-color: #212121;
@@ -561,22 +505,17 @@ ul li {
   justify-content: center;
   align-items: flex-start;
 }
-
-.poin-title {
+.poin .poin-title {
   margin-left: 5px;
-}
-
-.poin-title {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #757575;
 }
-
-.poin-span {
-  -webkit-text-decoration: underline #2196F3;
-          text-decoration: underline #2196F3;
-  color: #2196F3;
+.poin .poin-title .poin-span {
+  -webkit-text-decoration: underline #2196f3;
+          text-decoration: underline #2196f3;
+  color: #2196f3;
 }
 
 .button {
@@ -587,9 +526,8 @@ ul li {
   width: 216px;
   height: 50px;
   cursor: pointer;
-  color: #FFFFFF;
-  margin-left: 125px;
-  margin-top: 17px;
+  color: #ffffff;
+  margin: 17px 0 0 125px;
 }
 
 .services {
@@ -637,8 +575,7 @@ ul li {
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-  padding-bottom: 50px;
-  padding-top: 94px;
+  padding: 94px 0 50px;
 }
 
 .team-list {
@@ -671,24 +608,18 @@ ul li {
 .foto-member {
   width: 270px;
 }
-
-.team-member-name {
+.foto-member .team-member-name {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   text-align: center;
   padding-top: 30px;
 }
-
-.team-member-job {
+.foto-member .team-member-job {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: var(--section-two-color-text);
   text-align: center;
-  padding-top: 10px;
-}
-
-.team-member-job {
-  padding-bottom: 16px;
+  padding: 10px 0 16px;
 }

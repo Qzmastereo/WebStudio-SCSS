@@ -1,31 +1,35 @@
-
 .main-section {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img_Web/Imggg.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("img_Web/Imggg.jpg");
   background-size: cover;
   background-color: var(--background-color);
-}
 
-.flex-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-content: space-between;
-  width: 696px;
-  height: 200px;
-  margin: 0 auto;
-}
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 696px;
+    height: 200px;
+    margin: 0 auto;
 
-.main-title {
-  color: #FFF;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-size: 44px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 60px;
-  text-transform: uppercase;
+    .main-title {
+      color: #fff;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-size: 44px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 60px;
+      text-transform: uppercase;
+    }
+  }
 }
 
 .order-button {
@@ -38,10 +42,10 @@
   cursor: pointer;
 
   .text-button {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 16.41px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
