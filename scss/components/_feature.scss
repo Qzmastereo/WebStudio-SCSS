@@ -7,14 +7,14 @@
   padding-bottom: 94px;
 
   .feature-title {
-    font-family: 'Roboto', sans-serif;
+    font-family:  getFont('roboto-bold'), sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
   }
 
   .feature-text {
-    font-family: 'Roboto', sans-serif;
+    font-family: getFont('roboto-regular'), sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;

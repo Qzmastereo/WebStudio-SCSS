@@ -3,41 +3,6 @@
   margin: 0;
 }
 
-:root {
-  --background-color: #2f303a;
-  --button-color: #2196f3;
-  --section-two-color-text: #757575;
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: 700;
-  src: url("Roboto/Roboto-Bold.ttf");
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: 900;
-  src: url("Roboto/Roboto-Black.ttf");
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: 500;
-  src: url("Roboto/Roboto-Medium.ttf");
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: 400;
-  src: url("Roboto/Roboto-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: 300;
-  src: url("Roboto/Roboto-Light.ttf");
-}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -154,3 +119,4 @@ ul li {
 @import "components/modal";
 @import "components/services";
 @import "components/team";
+@import "scss/utils/variables";

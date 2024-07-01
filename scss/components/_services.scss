@@ -3,7 +3,7 @@
   position: relative;
 
   &-title {
-    font-family: 'Roboto', sans-serif;
+    font-family: getFont('roboto-bold'), sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -19,7 +19,7 @@
 
 .bg-title {
   background-color: #2F303ACC;
-  font-family: 'Roboto', sans-serif;
+  font-family: getFont('roboto-bold'), sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;

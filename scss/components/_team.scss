@@ -4,7 +4,7 @@
 }
 
 .team-title {
-  font-family: "Roboto", sans-serif;
+  font-family: getFont('roboto-bold'), sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -48,7 +48,7 @@
   width: 270px;
 }
 .team-member-name {
-  font-family: "Roboto", sans-serif;
+  font-family: getFont('roboto-medium'), sans-serif;
   font-weight: 500;
   font-size: 16px;
   text-align: center;
@@ -56,10 +56,10 @@
 }
 
 .team-member-job {
-  font-family: "Roboto", sans-serif;
+  font-family: getFont('roboto-regular'), sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: var(--section-two-color-text);
+  color:  getColor('section-two-color-text');
   text-align: center;
   padding: 10px 0 16px;
 }

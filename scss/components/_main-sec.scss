@@ -8,7 +8,7 @@
     ),
     url("img_Web/Imggg.jpg");
   background-size: cover;
-  background-color: var(--background-color);
+  background-color: getColor('background-color');
 
   .flex-container {
     display: flex;
@@ -34,15 +34,15 @@
 
 .order-button {
   border-radius: 4px;
-  border-color: var(--button-color);
-  background-color: var(--button-color);
+  border-color: getColor('button-color');
+  background-color: getColor('button-color');
   text-align: center;
   width: 216px;
   height: 50px;
   cursor: pointer;
 
   .text-button {
-    font-family: "Roboto", sans-serif;
+    font-family: getFont('roboto-bold'), sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 16.41px;
