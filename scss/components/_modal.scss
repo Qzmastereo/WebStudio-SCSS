@@ -1,3 +1,6 @@
+@import 'placeholders';
+@import 'mixins';
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -6,7 +9,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(opacity, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
 
   &.is-hidden {
     opacity: 0;
@@ -24,7 +27,7 @@
   padding: 15px;
   background-color: #ffffff;
   transform: translate(-50%, -50%);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(opacity, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
   margin: 0;
 
   .btn {
@@ -35,24 +38,20 @@
     cursor: pointer;
   }
   .form-title {
-    text-align: center;
-    font-family: getFont('roboto-bold'), sans-serif;
-    font-weight: 700;
-    font-size: 20px;
+    @extend %text-center;
+    @extend %font-bold;
+    @include font-size(20px);
     margin-bottom: 12px;
   }
   .form {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    @extend %flex-align-start;
     flex-direction: column;
     margin-left: 40px;
 
     .pred-title {
-      font-family: getFont('roboto-regular'), sans-serif;
-      font-weight: 400;
-      font-size: 12px;
-      color: #757575;
+      @extend %font-regular;
+      @include font-size(12px);
+      @extend %color-gray;
     }
 
     .form-input {
@@ -70,20 +69,18 @@
 }
 
 .poin {
-  display: flex;
+  @extend %flex-align-start;
   justify-content: center;
-  align-items: flex-start;
 
   .poin-title {
     margin-left: 5px;
-    font-family: getFont('roboto-regular'), sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #757575;
+    @extend %font-regular;
+    @include font-size(14px);
+    @extend %color-gray;
 
     .poin-span {
       text-decoration: underline #2196f3;
-      color: #2196f3;
+      @extend %color-black;
     }
   }
 }
@@ -96,6 +93,6 @@
   width: 216px;
   height: 50px;
   cursor: pointer;
-  color: #ffffff;
+  @extend %color-white;
   margin: 17px 0 0 125px;
 }

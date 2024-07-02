@@ -1,34 +1,32 @@
+@import 'placeholders';
+@import 'mixins';
+
 .services {
   padding-bottom: 94px;
   position: relative;
 
   &-title {
-    font-family: getFont('roboto-bold'), sans-serif;
-    font-weight: 700;
-    font-size: 36px;
+    @extend %font-bold;
+    @include font-size(36px);
     line-height: 42px;
-    text-align: center;
+    @extend %text-center;
     padding-bottom: 50px;
   }
 
   &-list {
-    display: flex;
-    justify-content: space-between;
+    @extend %flex-space-between;
   }
 }
 
 .bg-title {
   background-color: #2F303ACC;
-  font-family: getFont('roboto-bold'), sans-serif;
-  font-weight: 700;
-  font-size: 14px;
+  @extend %font-bold;
+  @include font-size(14px);
   line-height: 16px;
-  color: #FFFFFF;
+  @extend %color-white;
   width: 370px;
   height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex-center;
   z-index: 1;
   position: absolute;
   bottom: 95px;

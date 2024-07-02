@@ -1,3 +1,6 @@
+@import 'placeholders';
+@import 'mixins';
+
 .feature {
   width: 23%;
 }
@@ -7,23 +10,20 @@
   padding-bottom: 94px;
 
   .feature-title {
-    font-family:  getFont('roboto-bold'), sans-serif;
-    font-weight: 700;
-    font-size: 14px;
+     @extend %font-bold;
+    @include font-size(14px);
     line-height: 24px;
   }
 
   .feature-text {
-    font-family: getFont('roboto-regular'), sans-serif;
-    font-weight: 400;
-    font-size: 14px;
+    @extend %font-regular;
+    @include font-size(14px);
     line-height: 24px;
-    color: #757575;
+    @extend %color-gray;
   }
 }
 
 .flex-container1 {
-  display: flex;
-  justify-content: space-between;
+   @extend %flex-space-between;
 }
 

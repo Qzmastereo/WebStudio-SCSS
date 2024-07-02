@@ -1,0 +1,17 @@
+@mixin font-size($size) {
+  font-size: $size;
+}
+
+@mixin transition($property, $duration, $timing-function) {
+  transition: $property $duration $timing-function;
+}
+
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin color($color) {
+  color: $color;
+}

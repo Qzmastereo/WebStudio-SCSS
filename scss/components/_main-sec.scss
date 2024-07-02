@@ -1,3 +1,6 @@
+@import 'placeholders';
+@import 'mixins';
+
 .main-section {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -20,10 +23,10 @@
     margin: 0 auto;
 
     .main-title {
-      color: #fff;
-      text-align: center;
+      @extend %color-white;
+      @extend %text-center;
+      @include font-size(44px);
       font-family: "Roboto", sans-serif;
-      font-size: 44px;
       font-style: normal;
       font-weight: 900;
       line-height: 60px;
@@ -42,10 +45,9 @@
   cursor: pointer;
 
   .text-button {
-    font-family: getFont('roboto-bold'), sans-serif;
-    font-weight: 700;
-    font-size: 16px;
+    @extend %font-bold;
+    @include font-size(16px);
     line-height: 16.41px;
-    color: #ffffff;
+    @extend %color-white;
   }
 }
