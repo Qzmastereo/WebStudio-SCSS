@@ -69,15 +69,15 @@ body {
 }
 
 #onee {
-  background: url(img_Web/Vector_4.svg) no-repeat 12px;
+  background: url("img_Web/Vector_4.svg") no-repeat 12px;
 }
 
 #twoo {
-  background: url(img_Web/Vector_5.svg) no-repeat 12px;
+  background: url("img_Web/Vector_5.svg") no-repeat 12px;
 }
 
 #threee {
-  background: url(img_Web/Vector_6.svg) no-repeat 12px;
+  background: url("img_Web/Vector_6.svg") no-repeat 12px;
 }
 .main-title {
   animation: transforms 1s ease-in-out;
@@ -120,3 +120,28 @@ ul li {
 @import "components/services";
 @import "components/team";
 @import "scss/utils/variables";
+
+@media (min-width: 480px) {
+  .container {
+    width: 450px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .container{
+    
+  }
+}
+
+@media (min-width: 1200px) {
+  
+}
