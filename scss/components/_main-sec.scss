@@ -1,5 +1,4 @@
-@import 'placeholders';
-@import 'mixins';
+
 
 .main-section {
   padding-top: 200px;
@@ -25,7 +24,7 @@
     .main-title {
       @extend %color-white;
       @extend %text-center;
-      @include font-size(44px);
+      font-size: 14px;
       font-family: "Roboto", sans-serif;
       font-style: normal;
       font-weight: 900;
@@ -46,7 +45,7 @@
 
   .text-button {
     @extend %font-bold;
-    @include font-size(16px);
+    font-size: 16px;
     line-height: 16.41px;
     @extend %color-white;
   }

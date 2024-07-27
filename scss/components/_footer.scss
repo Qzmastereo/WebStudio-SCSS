@@ -1,5 +1,4 @@
-@import 'placeholders';
-@import 'mixins';
+
 .main-footer {
   background-color: getColor('background-color');
   padding-top: 60px;
@@ -13,7 +12,7 @@
   .footer-email,
   .footer-phone {
     @extend %font-regular;
-    @include font-size(14px);
+    font-size: 14px;
     line-height: 24px;
     @extend %color-white;
     padding-bottom: 9px;
@@ -39,7 +38,7 @@
 
     &:hover {
       background-color: #2196F3;
-      @include transition(background-color, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+      transition: background-color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 
@@ -48,7 +47,7 @@
     @extend %color-white;
     color: #FFFFFF;
     line-height: 16.41px;
-    @include font-size(14px);
+    font-size: 14px;
     letter-spacing: 3%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -76,7 +75,7 @@
     height: 50px;
     cursor: pointer;
     @extend %font-bold;
-    @include font-size(16px);
+    font-size: 16px;
     line-height: 30px;
     letter-spacing: 6%;
     @extend %color-white;

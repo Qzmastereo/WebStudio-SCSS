@@ -1,5 +1,3 @@
-@import 'placeholders';
-@import 'mixins';
 
 .feature {
   width: 23%;
@@ -11,13 +9,13 @@
 
   .feature-title {
      @extend %font-bold;
-    @include font-size(14px);
+    font-size: 14px;
     line-height: 24px;
   }
 
   .feature-text {
     @extend %font-regular;
-    @include font-size(14px);
+    font-size: 14px;
     line-height: 24px;
     @extend %color-gray;
   }
